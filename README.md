@@ -120,4 +120,4 @@ If Sk0uter saved your project from a spaghetti-code meltdown, consider throwing 
 
 why name sk0uter? it kinda scout your project, to create knowledge context... and 0 is cool
 
-☕ **[Buy me a Coffee on Ko-fi](#)**
+☕ **[Buy me a Coffee on Ko-fi](https://ko-fi.com/qualiap/goal?g=0)**
