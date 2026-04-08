@@ -1,6 +1,6 @@
 # Sk0uter: The Prompt Brewery
 
-![Sk0uter](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9pZTNtN29iY3U1MjYycDlmMTdveGl6enNoOWluNHdvNzJ4ZHp6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o7LbAb1r5bE4Ia0OfL/giphy.gif)
+![Sk0uter](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9pZTNtN29iY3U1MjYycDlmMTdveGl6enNoOWluNHdvNzJ4ZHp6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o7LbAb1r5bE4Ia0OfL/giphy.gif)
 
 ## Distilled Prompt generation on local model using LightRAG
 
