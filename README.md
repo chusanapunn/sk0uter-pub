@@ -1,14 +1,12 @@
 # Sk0uter: The Prompt Brewery
 
-![Sk0uter](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9pZTNtN29iY3U1MjYycDlmMTdveGl6enNoOWluNHdvNzJ4ZHp6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o7LbAb1r5bE4Ia0OfL/giphy.gif)
+![Brewery](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl3M3pjYjRvbjZnNGFiejQwcDhoemt4YzYxd3NxaDg0ZGZmdWZuNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.gif)
 
 ## Distilled Prompt generation on local model using LightRAG
 
 Standard AI tools treat your codebase like a pile of your weeks old laundry. They dig through the pile, find the **cheese touched sock** (a code snippet), and try to guess what the rest of that **cheese touched skins looks like.** They hit the **RAG Wall**—a point where context windows flood with irrelevant noise, and the AI starts hallucinating connections that don't exist.
 
 Sk0uter is a **Prompt Brewery**. We don't just "retrieve" data; we distill it. By fusing **Hybrid Search**, with **Relational Topology**, we generate "Distilled Project Context" that allows even local 8B models to reason like Senior Architects.
-
-![Brewery](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl3M3pjYjRvbjZnNGFiejQwcDhoemt4YzYxd3NxaDg0ZGZmdWZuNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.gif)
 
 ---
 
