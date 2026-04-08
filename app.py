@@ -1502,7 +1502,12 @@ with tab_roadmap:
                 # We pull the current context to give the AI real data to audit
                 # (You can use build_surgical_prompt here with a specific 'audit' query)
                 check_prompt = f"Global Goal: {data['global_goal']}\nMilestones: {data['milestones']}\n\nTask: Based on the current code, estimate completion % and suggest the next 3 technical tasks."
-                analysis = ask_local_llm(check_prompt)
+                analysis = ask_local_llm(
+                            check_prompt,
+                            model_name=st.session_state.ui_model_name,
+                            max_tokens=st.session_state.ui_max_tokens,
+                            num_ctx=st.session_state.ui_num_ctx,
+                        )
                 st.info(analysis)
 
 
