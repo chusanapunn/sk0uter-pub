@@ -1,12 +1,34 @@
 # Sk0uter: Project Context Prompt Brewery
+
+### 0 Config the VectorDB mode (Default local, if you own Qdrant server, change to server and point to that IP)
+<img width="1864" height="1003" alt="image" src="https://github.com/user-attachments/assets/111cc00a-4c0c-4f16-a283-a76d40559898" />
+
+### 1 Indexing Project Context to VectorDB and GraphDB
+<img width="1842" height="995" alt="image" src="https://github.com/user-attachments/assets/0bf11d8a-add8-42ce-af06-bdfade761c9a" />
+
+### 2 Now you can check both DB via GraphMap tab, link to Qdrant in VectorDB tab
+<img width="1811" height="837" alt="image" src="https://github.com/user-attachments/assets/9596fb6d-3a32-44de-aaa3-ff8424a9f3eb" />
+
+furthermore, you can inspect each node in graph map
+
+### 3 (WIP) Setup Project Goal and Milestones, Get an AI audit on the current project progress
+<img width="1547" height="957" alt="image" src="https://github.com/user-attachments/assets/409168e6-a029-4ec0-a792-dec232faa3d9" />
+
+context of goal and milestones here will be considered as important project context as well,
+right now working on the prompt context injection.
+
+### 4 Chat With local Ollama model, generate Prompt for cloudAI and answer from local model
 <img width="1495" height="1003" alt="Image" src="https://github.com/user-attachments/assets/f4287d94-5e91-444d-a743-b53141bae870" />
-![Brewery](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl3M3pjYjRvbjZnNGFiejQwcDhoemt4YzYxd3NxaDg0ZGZmdWZuNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.gif)
+
+chat_history is causing a problem right now, so mostly can be use only the 1st time for the current version
 
 ## Distilled Prompt generation on local model using LightRAG
 
 Standard AI tools treat your codebase like a pile of your weeks old laundry. They dig through the pile, find the **cheese touched sock** (a code snippet), and try to guess what the rest of that **cheese touched skins looks like.** They hit the **RAG Wall**—a point where context windows flood with irrelevant noise, and the AI starts hallucinating connections that don't exist.
 
 Sk0uter is a **Prompt Brewery** built contribute by **Claude Code**. We don't just "retrieve" data; we distill it. By fusing **Hybrid Search**, with **Relational Topology**, we generate "Distilled Project Context" that allows even local 8B models to reason like Senior Architects. ( just for a few questions on local model for now...)
+
+![Brewery](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl3M3pjYjRvbjZnNGFiejQwcDhoemt4YzYxd3NxaDg0ZGZmdWZuNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.gif)
 
 Sk0uter now work especially on **Godot4.4**. Indexed the Godot Project to VectorDB(Qdrant) and GraphRAG(Kuzu), then perform Hybrid Search and Graph Retrieval. SymCode context Compression to generate best prompt for Local/Cloud AI project development.
 
