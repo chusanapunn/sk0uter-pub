@@ -2,11 +2,11 @@
 
 ![Sk0uter](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9pZTNtN29iY3U1MjYycDlmMTdveGl6enNoOWluNHdvNzJ4ZHp6eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o7LbAb1r5bE4Ia0OfL/giphy.gif)
 
-**Your Machine. Your Architecture. Your Rules.**
+## Distilled Prompt generation on local model using LightRAG
 
 Standard AI tools treat your codebase like a pile of your weeks old laundry. They dig through the pile, find the **cheese touched sock** (a code snippet), and try to guess what the rest of that **cheese touched skins looks like.** They hit the **RAG Wall**—a point where context windows flood with irrelevant noise, and the AI starts hallucinating connections that don't exist.
 
-Sk0uter is a **Prompt Brewery**. We don't just "retrieve" data; we distill it. By fusing **Dense Semantic Search** with **Relational Topology**, we generate "Distilled Project Context" that allows even local 8B models to reason like Senior Architects.
+Sk0uter is a **Prompt Brewery**. We don't just "retrieve" data; we distill it. By fusing **Hybrid Search**, with **Relational Topology**, we generate "Distilled Project Context" that allows even local 8B models to reason like Senior Architects.
 
 ![Brewery](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl3M3pjYjRvbjZnNGFiejQwcDhoemt4YzYxd3NxaDg0ZGZmdWZuNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.gif)
 
@@ -46,7 +46,7 @@ Sk0uter is built on the principles of **LightRAG** that solves the "Incomplete C
 | :--- | :--- | :--- |
 | **Logic** | Simple keyword lookup | **Topology-Aware GraphRAG** |
 | **Context** | Full-file dumps (VRAM killer) | **Dynamic Context Compression** |
-| **Search** | Flat Vector Search | **Dual-Engine (Dense + Relational)** |
+| **Search** | Flat Vector Search | **Dual-Engine (Hybrid Search + Relational)** |
 | **Philosophy** | "Talk to your code" | **"Brew the perfect Handshake Prompt"** |
 | **Privacy** | Usually sends data to Cloud | **100% Local Sovereignty** |
 
@@ -84,10 +84,32 @@ OLLAMA_URL = "http://192.168.1.44:11434"
 ## CURRENT SYSTEM STATE
 
 Sk0uter is currently operational with:
-* **Dense Vector Indexing:** Every chunk of your code is mathematically mapped for semantic retrieval.
+* **Hybrid Vector Indexing:** Every chunk of your code is mathematically mapped for semantic and lexical retrieval.
 * **Relational Graphing:** Your Godot signals, script inheritance, and scene hierarchies are mapped into a high-performance relational database.
 * **Surgical Prompting:** Our "Brewery" distills these two data sources into a single structured payload for local (Ollama) or Cloud (Claude/Gemini) execution.
 
+## Patch note v0.9 
+Current state still mostly works on Cloud model, local 7b will lose context FAST, however, there are still many gaps to be fix.
+And if it starts to work on small model, It's likely going to be significantly better on Cloud model as well.
+
+- improve graph map relations layers, node details, ui,
+- add Qdrant Local mode/sever toggle
+- add prompt evaluation
+- Hybrid search (BM25+dense) on vector db with RRF
+- Graph Map real Three-tier context utilization + SymCode compression
+
+
+## Plan to improve next:
+
+- Change stack from streamlit UI to fastAPI + Golang Wails ( current streamlit is at UX limitation)
+- DSPy on prompt optimization
+- HyDE for vague queries
+- Adaptive token budgeting to fix silent truncation
+- Query Intent Router
+- Ollama Reranker
+- Prompt generation/Surgery Tab to focus on one prompt unlike chat memory manner
+- Context distillation for further compression
+- Agentic
 ---
 *Architected by qua.liap*
 
