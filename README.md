@@ -1,5 +1,5 @@
 # Sk0uter: Project Context Prompt Brewery
-
+<img width="1495" height="1003" alt="Image" src="https://github.com/user-attachments/assets/f4287d94-5e91-444d-a743-b53141bae870" />
 ![Brewery](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl3M3pjYjRvbjZnNGFiejQwcDhoemt4YzYxd3NxaDg0ZGZmdWZuNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wNDa1OZtvl6Fi/giphy.gif)
 
 ## Distilled Prompt generation on local model using LightRAG
