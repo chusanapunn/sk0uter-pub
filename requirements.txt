@@ -1,0 +1,18 @@
+# --- THE DEPENDENCY HELL RESOLVER ---
+packaging==23.2
+numpy>=1.24.0,<2.0.0
+pillow>=9.5.0,<11.0.0
+
+# --- UI & Wrapper ---
+streamlit==1.32.0
+streamlit-agraph==0.0.45
+pywebview==4.4.1
+pynvml==11.5.0
+
+# --- Databases & Graphs ---
+qdrant-client==1.17.1
+kuzu==0.3.2
+networkx==3.2.1
+python-louvain==0.16
+requests==2.31.0
+matplotlib>=3.7.0

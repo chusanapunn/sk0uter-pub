@@ -1,0 +1,15 @@
+# Environments
+python_env/
+venv/
+__pycache__/
+
+# Databases & User Data
+.scout/
+chats/
+scout_settings.json
+
+# Build files
+*.zip
+*.exe
+
+CLAUDE.md
