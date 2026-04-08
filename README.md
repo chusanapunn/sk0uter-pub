@@ -61,17 +61,12 @@ Sk0uter is built on the principles of **LightRAG** that solves the "Incomplete C
 
 ### Qdrant Vector Database
 
-By default, Sk0uter expects Qdrant to be running **locally** on `localhost:6333`.
+By default, Sk0uter creates Qdrant in local mode for you.
+But if you have existing Qdrant server, you can change Qdrant mode to server then specify their Qdrant host IP/Port.
 
-If your Qdrant instance is on a **different machine** (e.g. a NAS, home server, or cloud VM), or on a **non-default port**, edit `config.py`:
+You can preset Qdrant mode, host and port via `config.py`.
 
-```python
-# config.py
-QDRANT_HOST = "192.168.1.44"   # Replace with your Qdrant server's IP
-QDRANT_PORT = 6333             # Replace with the port Qdrant is listening on
-```
-
-To run Qdrant locally via Docker:
+To run Qdrant locally via Docker: 
 ```bash
 docker run -p 6333:6333 qdrant/qdrant
 ```
