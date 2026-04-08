@@ -7,7 +7,11 @@
 Standard AI tools treat your codebase like a pile of your weeks old laundry. They dig through the pile, find the **cheese touched sock** (a code snippet), and try to guess what the rest of that **cheese touched skins looks like.** They hit the **RAG Wall**—a point where context windows flood with irrelevant noise, and the AI starts hallucinating connections that don't exist.
 
 Sk0uter is a **Prompt Brewery** built contribute by Claude Code. We don't just "retrieve" data; we distill it. By fusing **Hybrid Search**, with **Relational Topology**, we generate "Distilled Project Context" that allows even local 8B models to reason like Senior Architects.
-
+---
+## Quick Start
+```
+run Start_Scout.bat # on Windows
+```
 ---
 
 # WHY A "BREWERY"?
@@ -49,7 +53,6 @@ Sk0uter is built on the principles of **LightRAG** that solves the "Incomplete C
 | **Privacy** | Usually sends data to Cloud | **100% Local Sovereignty** |
 
 ---
-
 ## CONFIGURATION
 
 ### Qdrant Vector Database
