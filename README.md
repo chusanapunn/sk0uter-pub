@@ -11,7 +11,8 @@ Sk0uter is a **Prompt Brewery** built contribute by Claude Code. We don't just "
 ---
 ## Quick Start
 ```
-run Start_Scout.bat # on Windows
+0. Ensure you have Ollama installed
+1. download the release file, Extract and Run Start_Scout.bat # on Windows
 ```
 ---
 
