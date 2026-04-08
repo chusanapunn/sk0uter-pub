@@ -11,8 +11,8 @@
 
 furthermore, you can inspect each node in graph map
 
-### 3 (WIP) Setup Project Goal and Milestones, Get an AI audit on the current project progress
-<img width="1547" height="957" alt="image" src="https://github.com/user-attachments/assets/409168e6-a029-4ec0-a792-dec232faa3d9" />
+### 3 Setup Project Goal and Milestones, Get an AI audit on the current project progress
+<img width="1799" height="876" alt="image" src="https://github.com/user-attachments/assets/5b2b3433-1c7a-4ef9-9d95-1aa5384f9df7" />
 
 context of goal and milestones here will be considered as important project context as well,
 right now working on the prompt context injection.
