@@ -31,8 +31,12 @@ docs/
   architecture/
     reference-architecture.md           layers, agent roster, the core loop
     data-model.md                       the fabula/syuzhet data model sketch
+    bridge-weaver.md                    THE flagship feature — generate the body between key points
+    pipeline-and-differentiation.md     ingest→bridge→prose→adapt; why it beats raw LLM chat
   decisions/
     open-questions.md                   the EIGHT cruxes the author must decide
+    medium-choice.md                    DECIDED: prose-first, adapt to manga later
+    risks-and-mitigations.md            red-team pass — the failure modes & the guard rules
 ```
 
 ## Key design ideas
@@ -47,6 +51,14 @@ docs/
 
 This project sits on the existing infrastructure: **Kuzu** (graph → canon), **Qdrant** (vectors → episodic prose), **LightRAG** (hybrid retrieval, extended with a temporal layer), and **SymCode** compression (to fit canon context into agent prompts). See the reuse map in [`docs/architecture/reference-architecture.md`](docs/architecture/reference-architecture.md).
 
-## Next step
+## Decisions so far
+- **Goal:** the saga first — the engine serves *Okeanos Returnal*, not a general product.
+- **Medium:** **prose web-serial first, adapt to manga later** (see [`medium-choice.md`](docs/decisions/medium-choice.md)) — with a one-weekend gut-check (write a scene as prose *and* thumbnail it as panels) to confirm before committing.
+- **Control:** balanced "architect with trap-doors" — author locks the anchors, agents fill the bridges, commitments stay reversible.
+- **The core fix:** the [Bridge Weaver](docs/architecture/bridge-weaver.md) — you have the *fabula* (key points); it generates the *skeleton* of the body between them, and **you write the prose**.
 
-The author answers the **eight cruxes** in [`docs/decisions/open-questions.md`](docs/decisions/open-questions.md). Each one branches the architecture; the v0 reference architecture assumes a sensible default for each until decided. Then: a thin vertical slice — model one short scene end-to-end (event ledger → point-in-time render from two POVs → continuity check) to validate the core loop before building breadth.
+## Next step — and the one rule that matters
+
+> **The discipline rule:** write **five bridge scenes by hand** — no engine — before building any engine feature. You spent six years polishing the *system* instead of writing; do not get handed a bigger system to polish. The engine earns its existence against a working human baseline. *No feature until five bridges have shipped.*
+
+After that: the thinnest vertical slice — ingest one slice of bible → place two adjacent key points as anchors → Bridge Weaver proposes 2–3 continuity-checked skeletons for the ugliest gap → you write one bridge chapter → continuity-check on commit. Prove that loop; everything else is scale. The remaining **eight cruxes** in [`docs/decisions/open-questions.md`](docs/decisions/open-questions.md) get answered as you go; v0 assumes a sensible default for each.
